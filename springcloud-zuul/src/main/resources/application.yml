@@ -18,7 +18,7 @@ zuul:
     producta:
       # 路由请求路径，当请求路径符合producta的path路径匹配时，调用服务springcloud-porducta处理请求
       path: /pta/**
-      # 路由对应的服务名
+      # 路由对应的服务名w
       serviceId: springcloud-porducta
     productb:
       path: /ptb/**
