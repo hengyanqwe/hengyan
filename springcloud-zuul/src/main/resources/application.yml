@@ -1,0 +1,25 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: springcould-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8001/eureka,http://eureka2:8002/eureka
+
+
+zuul:
+  # 配置服务网关路径
+  routes:
+    # 一组路由，自己定义名字
+    producta:
+      # 路由请求路径，当请求路径符合producta的path路径匹配时，调用服务springcloud-porducta处理请求
+      path: /pta/**
+      # 路由对应的服务名
+      serviceId: springcloud-porducta
+    productb:
+      path: /ptb/**
+      serviceId: springcloud-porductb
