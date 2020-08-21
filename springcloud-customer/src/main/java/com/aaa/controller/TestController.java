@@ -36,4 +36,9 @@ public class TestController {
     public String add(Course c){
         System.out.println(c);;return porductUserService.add(c.getCid(),c.getCname());
     }
+
+    @RequestMapping("test")
+    public String test(Course c){
+        System.out.println(c);;return porductUserService.add(c.getCid(),c.getCname());
+    }
 }

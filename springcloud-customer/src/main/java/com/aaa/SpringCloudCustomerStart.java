@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-// 将当前应用程序注册为feign得客户端程序
+// 将当前应用程序注册为feign得客户端程序 ressss
 @EnableEurekaClient
 @EnableFeignClients
 @SpringBootApplication
